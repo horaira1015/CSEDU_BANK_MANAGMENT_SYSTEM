@@ -1,0 +1,174 @@
+.vbox_background_center{
+-fx-background-image:url('../image/bg4.png');
+-fx-background-size:cover;
+
+}
+.vbox_background_right{
+-fx-background-image:url('../image/naya.png');
+-fx-background-size:cover;
+
+}
+.vbox_background_yes{
+-fx-background-image:url('../image/Screenshot_2.png');
+-fx-background-size:cover;
+
+}
+.vbox_background_shanto{
+-fx-background-image:url('../image/kohli.png');
+-fx-background-size:cover;
+
+}
+.vbox_background_kana{
+-fx-background-image:url('../image/tit.png');
+-fx-background-size:cover;
+
+}
+.vbox_background_litton{
+-fx-background-image:url('../image/tu.png');
+-fx-background-size:cover;
+-fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+
+    /* Adding an overlay to improve contrast */
+    -fx-background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); /* Linear gradient overlay */
+
+
+}
+.vbox_background_tamim{
+-fx-background-image:url('../image/mahi.png');
+-fx-background-size:cover;
+ -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+
+    /* Adding an overlay to improve contrast */
+    -fx-background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); /* Linear gradient overlay */
+
+}
+.vbox_background_tamim::before {
+    -fx-background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with 40% opacity */
+    -fx-content: "";
+    -fx-position: absolute;
+    -fx-top: 0;
+    -fx-left: 0;
+    -fx-right: 0;
+    -fx-bottom: 0;
+}
+.vbox_background_fizz{
+-fx-background-image:url('../image/lu.png');
+-fx-background-size:cover;
+ -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+
+    /* Adding an overlay to improve contrast */
+    -fx-background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); /* Linear gradient overlay */
+
+}
+.vbox_background_dhoni{
+-fx-background-image:url('../image/rew.png');
+-fx-background-size:cover;
+ -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+
+    /* Adding an overlay to improve contrast */
+    -fx-background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); /* Linear gradient overlay */
+
+}
+
+
+
+
+.vbox {
+    -fx-background-color: rgba(50,70, 60, 0.4); /* Light transparent black */
+    -fx-border-color: black;
+    -fx-background-radius: 20px; /* Rounded corners */
+    -fx-border-radius: 20px; /* Rounded corners for border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); /* Subtle shadow effect */
+
+    -fx-alignment: center; /* Center align children */
+    -fx-font-size: 14px; /* Font size */
+    -fx-box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+}
+
+.vbox:focused {
+    -fx-background-color: rgba(0, 0, 0, 0.3); /* Slightly darker transparent black when focused */
+    -fx-border-color: #0078D7; /* Border color when focused */
+    -fx-border-width: 2px; /* Border width when focused */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 0); /* Slightly increased shadow effect when focused */
+}
+
+
+/* Text Field */
+.text-field {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
+    -fx-text-fill: #333333; /* Text color */
+    -fx-border-color: transparent;
+    -fx-background-radius: 30px; /* Rounded corners */
+    -fx-border-radius: 30px; /* Rounded corners for border */
+}
+
+.text-field:focused {
+    -fx-border-color: #0078D7; /* Border color when focused */
+}
+
+/* Password Field */
+.password-field {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
+    -fx-text-fill: #333333; /* Text color */
+    -fx-border-color: transparent;
+    -fx-background-radius: 30px; /* Rounded corners */
+    -fx-border-radius: 30px; /* Rounded corners for border */
+}
+
+.password-field:focused {
+    -fx-border-color: #0078D7; /* Border color when focused */
+}
+
+/* Button */
+/* Button */
+/* Button */
+/* Button */
+.button {
+    -fx-background-color: rgba(70,110,100,0.7); /* Gradient background */
+-fx-border-color: black;
+    -fx-background-radius: 20px; /* Rounded corners */
+    -fx-border-radius: 20px; /* Rounded corners for border */
+    -fx-font-style: italic;
+    -fx-font-size: 14px; /* Font size */
+
+
+    -fx-transition: all 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    -fx-background-color: rgba(255,255,255,0.1); /* Darker gradient on hover */
+
+    -fx-font-size: 14px; /* Larger font size on hover */
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #3d6ca3, #005092); /* Darker gradient when pressed */
+
+}
+
+/*button for admin register fxml*/
+.button1{
+    -fx-background-color: rgba(250,230,220,0.7); /* Gradient background */
+
+    -fx-background-radius: 30px; /* Rounded corners */
+    -fx-border-radius: 25px; /* Rounded corners for border */
+    -fx-font-style: italic;
+    -fx-font-size: 14px; /* Font size */
+
+
+    -fx-transition: all 0.3s; /* Smooth transition */
+}
+
+.button1:hover {
+    -fx-background-color: rgba(255,255,255,0.3); /* Darker gradient on hover */
+
+    -fx-font-size: 14px; /* Larger font size on hover */
+}
+
+.button1:pressed {
+    -fx-background-color: linear-gradient(to bottom, #3d6ca3, #005092); /* Darker gradient when pressed */
+
+}
+/*modern tableview*/
+/* styles.css */
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoanAccountEnterViewControl">
+   <children>
+      <VBox prefHeight="530.0" prefWidth="458.0" styleClass="vbox_background_tamim" stylesheets="@../css/application.css">
+         <children>
+            <VBox prefHeight="103.0" prefWidth="367.0">
+               <children>
+                  <Label text="𝓦𝓮𝓵𝓬𝓸𝓶𝓮!!!" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="150.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="𝒴ℴ𝓊 𝒶𝓇ℯ 𝒾𝓃 𝓎ℴ𝓊𝓇 𝓁ℴ𝒶𝓃 𝒶𝒸𝒸ℴ𝓊𝓃𝓉" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="317.0" prefWidth="367.0">
+               <children>
+                  <Label text="𝓢𝓽𝓪𝓻𝓽𝓲𝓷𝓰 𝓐𝓶𝓸𝓾𝓷𝓽" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="amount" prefHeight="35.0" prefWidth="270.0" promptText="Amount" styleClass="text-field" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="120.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="𝓟𝓵𝓮𝓪𝓼𝓮 𝓼𝓮𝓵𝓮𝓬𝓽 𝓮𝓷𝓭 𝓭𝓪𝓽𝓮" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="ending" onAction="#calculate" prefHeight="38.0" prefWidth="296.0" styleClass="date-picker" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <Label text="𝓒𝓾𝓻𝓻𝓮𝓷𝓽 𝓐𝓶𝓸𝓾𝓷𝓽" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="amount1" prefHeight="35.0" prefWidth="270.0" promptText="Amount" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="120.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="𝓻𝓮𝓹𝓪𝔂 𝓐𝓬𝓬𝓸𝓾𝓷𝓽 𝓷𝓾𝓶𝓫𝓮𝓻" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="repayAcNu" prefHeight="35.0" promptText="account number" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="120.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#repay_from_account_number" styleClass="button5" stylesheets="@../css/application4.css" text="Pay Account">
+                     <HBox.margin>
+                        <Insets left="100.0" top="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#cashPaid" styleClass="button5" stylesheets="@../css/application4.css" text="Pay Cash">
+                     <HBox.margin>
+                        <Insets left="40.0" top="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="530.0" prefWidth="262.0" styleClass="vbox_background_right" stylesheets="@../css/application.css">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="237.0">
+               <children>
+                  <Label text="𝒞𝓊𝓇𝓇ℯ𝓃𝓉 ℐ𝓃𝓉ℯ𝓇ℯ𝓈𝓉 ℛ𝒶𝓉ℯ:" textFill="#cc2020">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="interestRateShow" text="Label" textFill="#43fc15">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="391.0" prefWidth="262.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="236.0" text="There is two option to repay" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="48.0" prefWidth="266.0" text="If you select &quot;Pay Cash&quot; you will  " textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="64.0" prefWidth="242.0" text="need to pay from your cash." textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="54.0" prefWidth="260.0" text="If you pay from any of your " textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="56.0" prefWidth="250.0" text="account you will be charged." textFill="#f2eeee">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox prefHeight="53.0" prefWidth="262.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goToAccountSelection" prefHeight="42.0" prefWidth="66.0" styleClass="button5" stylesheets="@../css/application4.css" text="Back">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

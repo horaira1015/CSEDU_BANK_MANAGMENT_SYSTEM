@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="720.0" styleClass="vbox_background_tamim" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminRegisterController">
+    <children>
+        <Label alignment="CENTER" prefHeight="96.0" prefWidth="319.0" text="ℭ𝔯𝔢𝔞𝔱𝔢 𝔶𝔬𝔲𝔯 𝔞𝔠𝔠𝔬𝔲𝔫𝔱" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="35.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="269.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝒻𝒾𝓇𝓈𝓉𝓃𝒶𝓂ℯ" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="fname" prefHeight="38.0" prefWidth="241.0" promptText="first name" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="254.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝓁𝒶𝓈𝓉𝓃𝒶𝓂ℯ" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="lname" promptText="last name" stylesheets="@../css/application6.css" />
+                    </children>
+                </VBox>
+            </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="266.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝓊𝓈ℯ𝓇ℐ𝒹" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="username" prefHeight="25.0" prefWidth="215.0" promptText="username" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="35.0" />
+               </HBox.margin>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="275.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝒫𝒶𝓈𝓈𝓌ℴ𝓇𝒹" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="password" prefHeight="38.0" prefWidth="259.0" promptText="password (8 digit)" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="7.0" right="18.0" />
+                            </VBox.margin>
+                        </PasswordField>
+                    </children>
+               <HBox.margin>
+                  <Insets left="-5.0" right="10.0" />
+               </HBox.margin>
+                </VBox>
+            </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="323.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝒫𝒽ℴ𝓃ℯ 𝓃𝓊𝓂𝒷ℯ𝓇" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="35.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="phoneno" prefHeight="38.0" prefWidth="285.0" promptText="phone number (11 digit)" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="30.0" right="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="282.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ℰ𝓂𝒶𝒾𝓁 𝒜𝒹𝒹𝓇ℯ𝓈𝓈" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="email" prefHeight="38.0" prefWidth="244.0" promptText="Mail (abc@gmail.com)" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="7.0" right="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="325.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝒟𝒶𝓉ℯ ℴ𝒻 ℬ𝒾𝓇𝓉𝒽:" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="35.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dob" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="select from the calender" stylesheets="@../css/application6.css">
+                            <VBox.margin>
+                                <Insets left="32.0" right="40.0" />
+                            </VBox.margin>
+                        </DatePicker>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="283.0">
+                    <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="𝒢ℯ𝓃𝒹ℯ𝓇" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="7.0" right="7.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="gender" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="242.0" promptText="Select your gender" styleClass="combo-box-prompt" stylesheets="@../css/application3.css">
+                            <VBox.margin>
+                                <Insets left="7.0" right="25.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                    </children>
+                </VBox>
+            </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#submit" prefHeight="38.0" prefWidth="115.0" styleClass="button5" stylesheets="@../css/application4.css" text="Submit">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </HBox.margin>
+                </Button>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#back" opacity="0.84" prefHeight="38.0" prefWidth="102.0" styleClass="button5" stylesheets="@../css/application4.css" text="Back">
+                    <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

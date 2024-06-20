@@ -1,0 +1,17 @@
+.transparent-button1 {
+    -fx-background-color: rgba(240, 220, 235, 0.6);  /* Makes the background transparent */
+    -fx-text-fill: black;  /* Sets the text color to white */
+    -fx-border-color: black;  /* Sets the border color to white */
+   /* Defines the border width */
+    -fx-border-radius: 15px;  /* Adds rounded corners to the border */
+
+    -fx-font-size: 14px;  /* Sets the font size */
+}
+
+.transparent-button1:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);  /* Slightly highlights the button on hover */
+}
+
+.transparent-button1:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2);  /* Changes background when button is pressed */
+}

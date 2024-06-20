@@ -1,0 +1,75 @@
+/* Define styles for the text field */
+.transparent-text-field {
+    -fx-background-color: rgba(200, 120, 120, 0.3);  /* Makes the background transparent */
+    -fx-text-fill: white;  /* Sets the text color to white */
+    -fx-prompt-text-fill: white;
+    -fx-border-color: black;  /* Sets the border color to white */
+    -fx-border-width: 1px;  /* Defines the border width */
+    -fx-border-radius: 15px;  /* Adds rounded corners to the border */
+    -fx-padding: 5px;  /* Adds padding inside the text field */
+    -fx-font-size: 13px;  /* Sets the font size */
+}
+.anchor{
+-fx-border-height: 1000;
+
+}
+
+/* Define styles for the button */
+.transparent-button {
+    -fx-background-color: rgba(130, 200, 120, 0.5);  /* Makes the background transparent */
+    -fx-text-fill: black;  /* Sets the text color to white */
+    -fx-border-color: black;  /* Sets the border color to white */
+   /* Defines the border width */
+    -fx-border-radius: 15px;  /* Adds rounded corners to the border */
+
+    -fx-font-size: 14px;  /* Sets the font size */
+}
+
+.transparent-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);  /* Slightly highlights the button on hover */
+}
+
+.transparent-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2);  /* Changes background when button is pressed */
+}
+
+/* Define styles for the table */
+.transparent-table {
+    -fx-background-color: rgba(220, 230, 210, 0.1);  /* Makes the background slightly transparent */
+    -fx-table-cell-border-color: rgba(220, 230, 210, 0.1);  /* Removes cell borders */
+    -fx-padding: 5px;  /* Adds padding around the table */
+    -fx-border-color: black;  /* Sets the border color to black */
+    -fx-border-width: 1px;  /* Defines the border width */
+    -fx-border-radius: 20px;  /* Adds rounded corners to the border */
+    -fx-background-radius: 20px;  /* Adds rounded corners to the background */
+}
+
+.transparent-table .table-row-cell {
+    -fx-background-color: transparent;  /* Transparent row background */
+    -fx-border-color: black;
+     -fx-border-width: 0 0 1px 0;
+}
+
+/* Style for column header */
+.transparent-table .column-header {
+    -fx-background-color: rgba(130, 200, 120, 0.5);  /* Slightly highlights the header */
+    -fx-text-fill: white;  /* Sets the text color to black */
+    -fx-border-color:black;  /* Sets header border color to black */
+    -fx-font-size: 12px;  /* Sets the font size */
+
+
+    -fx-alignment: CENTER;  /* Centers the text */
+      /* Adds padding inside the header */
+
+}
+
+/* Style for table cells */
+.transparent-table .table-cell {
+    -fx-background-color: transparent;  /* Makes the cell background slightly transparent */
+    -fx-text-fill: white;  /* Sets the text color to black */
+    -fx-font-size: 12px;  /* Sets the font size */
+    -fx-border-color: black;  /* Adds border between cells */
+    -fx-border-width: 0 1px 0 0;  /* Adds border to the right side only */
+    -fx-alignment: CENTER;  /* Centers the text */
+
+}

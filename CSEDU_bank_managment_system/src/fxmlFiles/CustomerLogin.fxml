@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerLoginController">
+   <children>
+      <VBox prefHeight="550.0" prefWidth="499.0" styleClass="vbox_background_dhoni" stylesheets="@../css/application.css">
+         <children>
+            <VBox prefHeight="307.0" prefWidth="478.0" scaleX="0.75" stylesheets="@../css/application.css">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="username" prefHeight="38.0" prefWidth="388.0" promptText="CUSTOMER USERNAME" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" prefHeight="37.0" prefWidth="435.0" promptText="PIN" stylesheets="@../css/application6.css">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button mnemonicParsing="false" onAction="#signedInCustomer" prefHeight="38.0" prefWidth="105.0" stylesheets="@../css/application.css" text="SIGN IN" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="root" />
+                  <String fx:value="vbox" />
+               </styleClass>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="550.0" prefWidth="263.0" styleClass="vbox_background_kana" stylesheets="@../css/application.css">
+         <children>
+            <Label text="𝓝𝓮𝔀 𝓲𝓷 𝓒𝓢𝓔𝓓𝓤?" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="𝓟𝓵𝓮𝓪𝓼𝓮 𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#registerCustomer" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="REGISTER" textAlignment="CENTER">
+               <font>
+                  <Font name="Constantia Italic" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#back" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="BACK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="150.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

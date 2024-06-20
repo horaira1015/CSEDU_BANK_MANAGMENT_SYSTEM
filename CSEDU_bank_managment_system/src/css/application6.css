@@ -1,0 +1,37 @@
+/* styles.css */
+.text-field {
+    -fx-background-color: rgba(80,120,100,0.3);
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill:white;
+    -fx-font-size: 16px;
+
+}
+
+.text-field:focused {
+    -fx-border-color: #0078d7;
+}
+
+.validation-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+
+.date-picker {
+    -fx-background-color: transparent;
+
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+    -fx-font-size: 14px;
+
+}
+
+.date-picker:focused {
+    -fx-border-color: #0078d7;
+}
+
+.hbox .image-view {
+    -fx-padding: 0 10 0 0;
+}

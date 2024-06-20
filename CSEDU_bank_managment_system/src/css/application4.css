@@ -1,0 +1,39 @@
+/* styles.css */
+
+.table-view {
+    -fx-background-color: rgba(230, 210, 225, 0.9); /* Deep transparent background */
+    -fx-border-radius: 30px; /* Rounded border */
+    -fx-border-color: rgba(230, 205, 215, 0.8); /* Border color */
+
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-background-color: rgba(150, 130, 145, 0.3);
+    -fx-border-radius: 30px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(205, 130, 145, 0.2); /* Lighter background for odd rows */
+    -fx-border-radius: 30px;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-border-radius: 30px;
+
+
+}
+
+.table-column .label {
+    -fx-text-fill: black; /* Text color */
+    -fx-font-weight: bold;
+    -fx-border-radius: 30px;
+}
+.button5{
+ -fx-text-fill: black; /* Text color */
+    -fx-font-weight: bold;
+    -fx-border-radius: 30px;
+    -fx-background-color: rgba(210,240,240,0.5);
+    -fx-background-radius: 30px;
+}

@@ -1,0 +1,41 @@
+.text-field2 {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 45px;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-color: rgb(240,220,235,0.8);
+    -fx-background-radius: 20px;
+    -fx-prompt-text-fill: #a8a8a8;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+.text-field2:focused {
+    -fx-border-color: #1a73e8;
+    -fx-background-color: #e8f0fe;
+}
+
+
+/*button for AccountTransactionHere*/
+.button3 {
+    -fx-pref-width: 60px;
+    -fx-pref-height: 30px;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-color: rgb(240,220,235,0.8);
+    -fx-background-radius: 20px;
+    -fx-prompt-text-fill: #a8a8a8;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+.button3:focused {
+    -fx-border-color: #1a73e8;
+    -fx-background-color: #e8f0fe;
+}

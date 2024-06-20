@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountTransaction">
+    <children>
+        <VBox prefHeight="507.0" prefWidth="507.0">
+            <children>
+                <TabPane prefHeight="577.0" prefWidth="379.0" styleClass="vbox_background_right" stylesheets="@../css/application.css" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="deposit">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="421.0">
+                                    <children>
+                                        <HBox layoutX="23.0" layoutY="78.0" prefHeight="23.0" prefWidth="299.0">
+                                            <children>
+                                                <Label text="𝒟ℯ𝓅ℴ𝓈𝒾𝓉" textFill="WHITE">
+                                                    <HBox.margin>
+                                                        <Insets bottom="30.0" left="30.0" top="20.0" />
+                                                    </HBox.margin>
+                                                    <font>
+                                                        <Font size="16.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="deposit" prefHeight="38.0" prefWidth="192.0" promptText="Amount" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="25.0" layoutY="144.0" prefHeight="120.0" prefWidth="313.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#dAdd100" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK100" textFill="WHITE">
+                                                    <HBox.margin>
+                                                        <Insets left="20.0" top="50.0" />
+                                                    </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd500" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="Tk500" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="50.0" />
+                                       </HBox.margin></Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd1000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK1000" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="50.0" />
+                                       </HBox.margin></Button>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="29.0" layoutY="264.0" prefHeight="79.0" prefWidth="305.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#dAdd2000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK2000" textFill="WHITE">
+                                                    <HBox.margin>
+                                                        <Insets left="20.0" />
+                                                    </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd5000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK5000" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd10000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK10000" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="32.0" layoutY="364.0" prefHeight="97.0" prefWidth="304.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#dProceed" prefHeight="50.0" prefWidth="80.0" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="Proceed" textAlignment="CENTER">
+                                                    <font>
+                                                        <Font size="20.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets left="60.0" />
+                                                    </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#reset" prefHeight="50.0" prefWidth="80.0" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="Reset">
+                                                    <HBox.margin>
+                                                        <Insets left="20.0" />
+                                                    </HBox.margin>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="withdraw">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <HBox layoutY="70.0" prefHeight="0.0" prefWidth="299.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="421.0">
+                                            <children>
+                                                <HBox layoutX="23.0" layoutY="78.0" prefHeight="75.0" prefWidth="336.0">
+                                                    <children>
+                                                        <Label text="𝓌𝒾𝓉𝒽𝒹𝓇𝒶𝓌" textFill="WHITE">
+                                                            <HBox.margin>
+                                                                <Insets bottom="30.0" left="30.0" top="20.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font size="16.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="withdraw" prefHeight="39.0" prefWidth="197.0" promptText="Amount" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                            <HBox.margin>
+                                                                <Insets left="10.0" top="15.0" />
+                                                            </HBox.margin>
+                                                        </TextField>
+                                                    </children>
+                                                </HBox>
+                                                <HBox layoutX="23.0" layoutY="175.0" prefHeight="98.0" prefWidth="361.0">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd100" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK100" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="40.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd500" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK500" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="40.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd1000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK1000" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="40.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                                    </children>
+                                                </HBox>
+                                                <HBox layoutX="26.0" layoutY="273.0" prefHeight="82.0" prefWidth="341.0">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd2000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK2000" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="15.0" top="10.0" />
+                                             </HBox.margin></Button>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd5000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK5000" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </HBox.margin></Button>
+                                                        <Button mnemonicParsing="false" onAction="#wAdd10000" prefHeight="60.0" prefWidth="100.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TK10000" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </HBox.margin></Button>
+                                                    </children>
+                                                </HBox>
+                                                <HBox layoutX="42.0" layoutY="362.0" prefHeight="71.0" prefWidth="323.0">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#wProceed" prefHeight="54.0" prefWidth="80.0" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="Proceed">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets left="90.0" />
+                                                            </HBox.margin>
+                                                        </Button>
+                                                        <Button mnemonicParsing="false" onAction="#reset" prefHeight="54.0" prefWidth="80.0" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="Reset">
+                                                            <HBox.margin>
+                                                                <Insets left="10.0" />
+                                                            </HBox.margin>
+                                                        </Button>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="money transfer">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <VBox layoutX="29.0" layoutY="126.0" prefHeight="315.0" prefWidth="373.0">
+                                            <children>
+                                                <VBox prefHeight="295.0" prefWidth="398.0" stylesheets="@../css/application.css">
+                                                    <children>
+                                                        <TextField fx:id="tId" promptText="ACCOUNT ID" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                            <VBox.margin>
+                                                                <Insets left="40.0" right="40.0" />
+                                                            </VBox.margin>
+                                                            <font>
+                                                                <Font name="System Italic" size="14.0" />
+                                                            </font>
+                                                        </TextField>
+                                          <TextField fx:id="tAmount" prefHeight="31.0" prefWidth="340.0" promptText="Amount" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                             <VBox.margin>
+                                                <Insets left="40.0" right="40.0" top="20.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                                        <Button mnemonicParsing="false" onAction="#transferMoney" prefHeight="44.0" prefWidth="121.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="TRANSFER">
+                                                            <font>
+                                                                <Font name="System Italic" size="14.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets top="15.0" />
+                                                            </VBox.margin>
+                                                        </Button>
+                                                    </children>
+                                                    <styleClass>
+                                                        <String fx:value="root" />
+                                                        <String fx:value="vbox" />
+                                                    </styleClass>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+                                        <HBox layoutX="70.0" layoutY="14.0" prefHeight="34.0" prefWidth="251.0">
+                                            <children>
+                                                <Label text="𝓜𝓸𝓷𝓮𝔂 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 " textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                       <HBox.margin>
+                                          <Insets left="40.0" />
+                                       </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets top="50.0" />
+                                            </padding>
+                                        </HBox>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="change details">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="200.0" styleClass="vbox_background_right" stylesheets="@../css/application.css">
+                                    <children>
+                                        <VBox layoutX="3.0" prefHeight="75.0" prefWidth="372.0">
+                                            <children>
+                                                <Label text="ℭ𝔥𝔞𝔫𝔤𝔢 𝔇𝔢𝔱𝔞𝔦𝔩𝔰 " textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="20.0" />
+                                                    </font>
+                                                    <VBox.margin>
+                                                        <Insets left="120.0" />
+                                                    </VBox.margin>
+                                                    <padding>
+                                                        <Insets top="40.0" />
+                                                    </padding>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="2.0" layoutY="75.0" prefHeight="200.0" prefWidth="428.0">
+                                            <children>
+                                                <TextField fx:id="fname" prefHeight="35.0" prefWidth="309.0" promptText="first name" scaleX="0.75" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                    <VBox.margin>
+                                                        <Insets top="20.0" />
+                                                    </VBox.margin>
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </TextField>
+                                                <TextField fx:id="lname" prefHeight="35.0" promptText="last name" scaleX="0.75" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                    <VBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </VBox.margin>
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </TextField>
+                                                <TextField fx:id="phoneno" prefHeight="35.0" promptText="phonenumber" scaleX="0.75" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                    <VBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </VBox.margin>
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </TextField>
+                                                <TextField fx:id="email" prefHeight="35.0" prefWidth="401.0" promptText="email" scaleX="0.75" styleClass="transparent-text-field" stylesheets="@../css/application5.css">
+                                                    <VBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </VBox.margin>
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </TextField>
+                                            </children>
+                                        </VBox>
+                                        <HBox layoutX="14.0" layoutY="282.0" prefHeight="62.0" prefWidth="359.0" stylesheets="@../css/application3.css">
+                                            <children>
+                                                <DatePicker fx:id="dob" prefHeight="24.0" prefWidth="160.0" promptText="date of birth" styleClass="date-picker" stylesheets="@../css/application6.css">
+                                                    <HBox.margin>
+                                                        <Insets left="37.0" top="10.0" />
+                                                    </HBox.margin>
+                                                </DatePicker>
+                                                <ComboBox fx:id="gender" prefHeight="37.0" prefWidth="159.0" promptText="select gender" styleClass="combo-box" stylesheets="@../css/application5.css">
+                                                    <HBox.margin>
+                                                        <Insets left="4.0" top="10.0" />
+                                                    </HBox.margin>
+                                                </ComboBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="89.0" layoutY="340.0" prefHeight="74.0" prefWidth="200.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#update" prefHeight="58.0" prefWidth="90.0" styleClass="transparent-button3" stylesheets="@../css/application8.css" text="Update">
+                                                    <HBox.margin>
+                                                        <Insets left="70.0" top="30.0" />
+                                                    </HBox.margin>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </VBox>
+        <VBox prefHeight="507.0" prefWidth="372.0" styleClass="vbox_background_litton" stylesheets="@../css/application.css">
+            <children>
+                <VBox prefHeight="143.0" prefWidth="251.0">
+                    <children>
+                        <Label alignment="CENTER" text="𝔘𝔰𝔢𝔯𝔫𝔞𝔪𝔢" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="70.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="username" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="70.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="𝔄𝔠𝔠𝔬𝔲𝔫𝔱 𝔑𝔲𝔪𝔟𝔢𝔯" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="70.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="id" prefHeight="27.0" prefWidth="113.0" text="le" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="90.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox prefHeight="94.0" prefWidth="251.0">
+                    <children>
+                        <Label prefHeight="36.0" prefWidth="143.0" text="𝕮𝖚𝖗𝖗𝖊𝖓𝖙 𝕭𝖆𝖑𝖆𝖓𝖈𝖊" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="60.0" />
+                    </VBox.margin>
+                </VBox>
+                <HBox prefHeight="46.0" prefWidth="251.0">
+                    <children>
+                        <Label text="𝕿𝕶($)" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets left="80.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="balance" text="0" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="50.0" left="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="90.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="29.0" />
+                    </padding>
+                </HBox>
+                <VBox prefHeight="114.0" prefWidth="251.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#signOut" prefHeight="36.0" prefWidth="191.0" styleClass="transparent-button1" stylesheets="@../css/application7.css" text="Back to Account Selection">
+                            <VBox.margin>
+                                <Insets left="60.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="30.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

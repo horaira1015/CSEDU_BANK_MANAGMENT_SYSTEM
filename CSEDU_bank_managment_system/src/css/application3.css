@@ -1,0 +1,16 @@
+.combo-box {
+    -fx-background-color: rgba(80,120,100,0.3);
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;  /* sets the text color */
+}
+
+.combo-box .combo-box-prompt {
+    -fx-prompt-text-fill: white;  /* sets the prompt text color */
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: black;  /* sets the text color of the items */
+}
